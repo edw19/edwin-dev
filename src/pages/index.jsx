@@ -15,6 +15,7 @@ export default function Home({ posts }) {
       <div className="grid grid-cols-1 bg-blue-400">
         <h1 className="">Edwin narváez</h1>
         <p>Front Developer</p>
+        go to the <Link href="/blog"><a>blog</a></Link>
       </div>
     </>
   );
