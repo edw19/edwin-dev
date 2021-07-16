@@ -10,21 +10,21 @@ function Habilidades() {
         <title>Edwin Narváez - Habilidades</title>
       </Head>
       <div className="flex flex-row justify-center">
-        <h1 className="text-4xl font-bold">Mis Habilidades</h1>
+        <h1 className="text-2xl font-bold">Conocimientos en</h1>
         <div className="flex ml-6">
           <select
-            className="m-auto"
+            className="m-auto bg-transparent border-none outline-none font-bold"
             onChange={(e) =>
               setFilterSkills(
                 skills.filter((skill) =>
-                  e.target.value === "todas"
+                  e.target.value === "*"
                     ? [...skills]
                     : skill.category === e.target.value
                 )
               )
             }
           >
-            <option value="todas">todas</option>
+            <option className="text-right font-extrabold" value="*">*</option>
             <option value="front-end">Front-End</option>
             <option value="back-end">Back-End</option>
             <option value="db">Databases</option>
@@ -32,7 +32,7 @@ function Habilidades() {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2 mt-4">
         {filterSkills.map((skill) => (
           <a
             href={skill.uri}

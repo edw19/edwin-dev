@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="grid grid-cols-12 py-10">
+    <footer className="grid md:grid-cols-12 py-10">
       <div className="col-start-4 col-span-8">
         <div className="grid grid-cols-3 text-gray-500">
           <a

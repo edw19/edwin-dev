@@ -10,10 +10,10 @@ function Navbar() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 z-50 mt-2 navbar-backdrop rounded-b-md">
+    <nav className="sticky top-0 z-50 mt-3 navbar-backdrop rounded-b-md">
       <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-12">
         <div
-          className="flex justify-center mt-1 md:col-start-3"
+          className="flex justify-center mt-1 pl-3 md:col-start-3"
           onClick={() => router.push("/")}
         >
           <Image
@@ -45,7 +45,7 @@ function Navbar() {
         </div>
       </div>
       <div className={` ${open ? "block" : "hidden"}`}>
-        <div className="flex flex-col bg-indigo-500 rounded-lg my-2 mx-2 shadow-2xl text-center text-white font-semibold">
+        <div className="flex flex-col bg-indigo-500 rounded-lg my-2 shadow-2xl text-center text-white font-semibold">
           <Link href="/proyectos">
             <a className="py-2 hover:bg-indigo-400 rounded-lg">Mis proyectos</a>
           </Link>

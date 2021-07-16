@@ -37,19 +37,6 @@ export default function PostPage({ source, frontMatter }) {
       <main>
         <MDXRemote {...source} components={components} />
       </main>
-
-      <style jsx>{`
-        .post-header h1 {
-          margin-bottom: 0;
-        }
-
-        .post-header {
-          margin-bottom: 2rem;
-        }
-        .description {
-          opacity: 0.6;
-        }
-      `}</style>
     </>
   );
 }
@@ -57,15 +44,9 @@ export default function PostPage({ source, frontMatter }) {
 export const getStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
-
   const { content, data } = matter(source);
 
   const mdxSource = await serialize(content, {
-    // Optionally pass remark/rehype plugins
-    mdxOptions: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-    },
     scope: data,
   });
 
