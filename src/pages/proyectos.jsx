@@ -7,7 +7,7 @@ function proyectos() {
       <Head>
         <title>Edwin Narváez - Mis Proyectos</title>
       </Head>
-      <div className="grid grid-cols-1 mt-10">
+      <div className="sm:col-start-2 sm:col-span-6 md:grid-cols-4 md:col-start-3 md:col-span-6">
         {proyects.map((proyect) => (
           <div
             key={proyect.title}

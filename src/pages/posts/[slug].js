@@ -15,6 +15,8 @@ const components = {
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
   TestComponent: dynamic(() => import("../../components/TestComponent")),
+  Title: dynamic(() => import("../../components/blog/Title")),
+  Paragraph: dynamic(() => import("../../components/blog/Paragraph")),
   Head,
 };
 
@@ -28,13 +30,11 @@ export default function PostPage({ source, frontMatter }) {
           </Link>
         </nav>
       </header>
-      <div className="post-header">
-        <h1>{frontMatter.title}</h1>
+      <main className="sm:col-start-2 sm:col-span-5 md:col-start-3 md:col-span-6">
+        <h1 className="text-4xl text-center">{frontMatter.title}</h1>
         {frontMatter.description && (
           <p className="description">{frontMatter.description}</p>
         )}
-      </div>
-      <main>
         <MDXRemote {...source} components={components} />
       </main>
     </>

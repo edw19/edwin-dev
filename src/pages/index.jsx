@@ -19,7 +19,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <h3 className="text-indigo-500 font-extrabold">Publicaciones</h3> */}
-      <div className="sm:col-start-1 sm:col-span-7 md:col-start-3 md:col-span-5">
+      <div className="sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-5">
         {posts.map((post) => (
           <li key={post.filePath} className=" list-none py-2 p-1 mb-1">
             <Link
@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           </li>
         ))}
       </div>
-      <div className="hidden sm:block bg-yellow-100 md:col-span-3 text-center">here go to Navigate</div>
+      <div className="hidden sm:block sm:col-span-3 bg-yellow-100 md:col-span-3 text-center">here go to Navigate</div>
     </>
   );
 }
