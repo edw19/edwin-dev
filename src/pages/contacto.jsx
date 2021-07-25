@@ -6,7 +6,7 @@ function contacto() {
       <Head>
         <title>Edwin Narváez - Contacto</title>
       </Head>
-      <h1 className="sm:col-span-8 md:col-span-10 text-4xl font-bold text-center">
+      <h1 className="sm:col-span-8 md:col-span-10 text-4xl font-bold text-center mt-4">
         Envíame un email
       </h1>
       <form

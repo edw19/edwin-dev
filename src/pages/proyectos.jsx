@@ -1,5 +1,7 @@
 import { proyects } from "../conts/proyects";
 import Head from "next/head";
+import Image from "next/image";
+import system from "/public/system of lessa.png";
 
 function proyectos() {
   return (
@@ -11,13 +13,16 @@ function proyectos() {
         {proyects.map((proyect) => (
           <div
             key={proyect.title}
-            className="hover:bg-gray-400 hover:bg-opacity-25"
+            className="hover:shadow-2xl hover:bg-opacity-25 p-2"
           >
-            <h1>{proyect.title}</h1>
+            <h1 className="font-semibold text-2xl">{proyect.title}</h1>
             <p>{proyect.description}</p>
-            <a href={proyect?.url} target="_black">
-              Revisar
-            </a>
+            <div className="flex justify-end">
+              <a href={proyect?.url} className=" px-4 py-2 bg-indigo-500 rounded-md text-white mb-2" target="_black">
+                Revisar
+              </a>
+            </div>
+            <Image src={system} placeholder="blur" />
           </div>
         ))}
       </div>

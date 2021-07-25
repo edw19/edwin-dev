@@ -8,8 +8,9 @@ import Link from "next/link";
 import path from "path";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import CustomLink from "../../components/CustomLink";
+import mdxPrism from "mdx-prism";
 
-const components = {
+const MDXComponents = {
   a: CustomLink,
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
@@ -17,25 +18,24 @@ const components = {
   TestComponent: dynamic(() => import("../../components/TestComponent")),
   Title: dynamic(() => import("../../components/blog/Title")),
   Paragraph: dynamic(() => import("../../components/blog/Paragraph")),
+  Code: dynamic(() => import("../../components/blog/Code")),
+  Grid: dynamic(() => import("../../components/blog/Grid")),
   Head,
 };
 
 export default function PostPage({ source, frontMatter }) {
   return (
     <>
-      <header>
+      {/* <header>
         <nav>
           <Link href="/">
             <a>👈 Go back home</a>
           </Link>
         </nav>
-      </header>
-      <main className="sm:col-start-2 sm:col-span-5 md:col-start-3 md:col-span-6">
-        <h1 className="text-4xl text-center">{frontMatter.title}</h1>
-        {frontMatter.description && (
-          <p className="description">{frontMatter.description}</p>
-        )}
-        <MDXRemote {...source} components={components} />
+      </header> */}
+      <main className="sm:col-start-2 sm:col-span-6 md:col-start-3 md:col-span-7">
+        <h1 className="text-4xl font-semibold">{frontMatter.title}</h1>
+        <MDXRemote {...source} components={MDXComponents} />
       </main>
     </>
   );
@@ -48,6 +48,23 @@ export const getStaticProps = async ({ params }) => {
 
   const mdxSource = await serialize(content, {
     scope: data,
+    mdxOptions: {
+      remarkPlugins: [
+        require("remark-slug"),
+        [
+          require("remark-autolink-headings"),
+          {
+            linkProperties: {
+              className: ["anchor"],
+            },
+          },
+        ],
+        require("remark-code-titles"),
+      ],
+
+      rehypePlugins: [mdxPrism],
+    },
+    target: ["esnext"],
   });
 
   return {
