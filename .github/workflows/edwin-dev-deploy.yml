@@ -28,7 +28,10 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+      env: 
+        NEXT_PUBLIC_BASE_PATH: /edwin-dev
     - run: npm run export
+        NEXT_PUBLIC_BASE_PATH: /edwin-dev
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀

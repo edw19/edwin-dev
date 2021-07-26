@@ -1,7 +1,6 @@
-
-
+const { prefixEdwinDevAssets } = require("./src/constants");
 
 module.exports = {
-    basePath: '/edwin-dev',
-    assetPrefix: '/edwin-dev'
-}
+  basePath: prefixEdwinDevAssets,
+  assetPrefix: prefixEdwinDevAssets,
+};

@@ -1,7 +1,6 @@
 import { proyects } from "../conts/proyects";
 import Head from "next/head";
-
-const prefix = "/edwin-dev";
+import { prefixEdwinDevAssets } from "../constants";
 
 function proyectos() {
   return (
@@ -27,7 +26,7 @@ function proyectos() {
               </a>
             </div>
             <img
-              src={prefix + "/lessa.png"}
+              src={prefixEdwinDevAssets + "/lessa.png"}
               alt="edwin narváez sistema de ventas ecuador"
               placeholder="blur"
             />

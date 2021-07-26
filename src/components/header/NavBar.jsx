@@ -3,8 +3,7 @@ import Search from "./Search";
 import { Spin as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { useRouter } from "next/router";
-
-const prefix = "/edwin-dev";
+import { prefixEdwinDevAssets } from "../../constants";
 
 function Navbar() {
   const router = useRouter();
@@ -17,7 +16,7 @@ function Navbar() {
           onClick={() => router.push("/")}
         >
           <img
-            src={prefix + "/edwin.png"}
+            src={prefixEdwinDevAssets + "/edwin.png"}
             alt="edwin narváez"
             width={50}
             height={50}
