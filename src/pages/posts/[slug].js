@@ -33,7 +33,7 @@ export default function PostPage({ source, frontMatter }) {
           </Link>
         </nav>
       </header> */}
-      <main className="sm:col-start-2 sm:col-span-6 md:col-start-3 md:col-span-7">
+      <main className="sm:col-start-2 sm:col-span-6 md:col-start-3 md:col-span-7 lg:col-start-4 lg:col-span-7">
         <h1 className="text-4xl font-semibold">{frontMatter.title}</h1>
         <MDXRemote {...source} components={MDXComponents} />
       </main>

@@ -35,7 +35,7 @@ function Habilidades() {
           </select>
         </div>
       </div>
-      <div className="sm:col-start-2 sm:col-span-6 md:col-start-2 md:col-span-8 gap-x-4 gap-y-2 mt-4">
+      <div className="sm:col-start-2 sm:col-span-6 md:col-start-2 md:col-span-8 lg:col-start-3 gap-x-4 gap-y-2 mt-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
           {filterSkills.map((skill) => (
             <a

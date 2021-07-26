@@ -10,7 +10,7 @@ function Acerca() {
       <h1 className="text-4xl text-center sm:col-span-8 md:col-span-10 font-bold mt-4">
         Acerca de mi
       </h1>
-      <div className="sm:col-start-3 sm:col-span-5 md:col-start-3 md:col-span-6">
+      <div className="sm:col-start-3 sm:col-span-5 md:col-start-3 md:col-span-6 lg:col-start-4">
         <p className="mt-5">
           ¡Hola! soy Edwin. Me gusto el mundo del desarrollo debido a que es un
           mundo apacionante y nos da la capacidad de resolver problemas a través

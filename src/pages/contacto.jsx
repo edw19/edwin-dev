@@ -11,7 +11,7 @@ function contacto() {
       </h1>
       <form
         method="post"
-        className="sm:col-start-2 sm:col-span-6 md:col-start-3 md:col-span-6 mt-6 border shadow-xl rounded-2xl p-5"
+        className="sm:col-start-2 sm:col-span-6 md:col-start-3 md:col-span-6 lg:col-start-4 mt-6 border shadow-xl rounded-2xl p-5"
       >
         <div className="grid grid-cols-2 gap-y-4">
           <input

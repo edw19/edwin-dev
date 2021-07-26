@@ -4,10 +4,8 @@ import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
 import { postFilePaths, POSTS_PATH } from "../utils/mdxUtils";
-import { useRouter } from "next/router";
 
 export default function Home({ posts }) {
-  const router = useRouter();
   return (
     <>
       <Head>
@@ -18,8 +16,7 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <h3 className="text-indigo-500 font-extrabold">Publicaciones</h3> */}
-      <div className="sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-5 mx-2">
+      <div className="sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-5 lg:col-start-3 mx-2">
         {posts.map((post) => (
           <li
             key={post.filePath}
