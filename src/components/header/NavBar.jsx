@@ -6,6 +6,11 @@ import { Spin as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+const myLoader = ({ src, width, quality }) => {
+  // console.log(src)
+  return src;
+};
+
 function Navbar() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -17,6 +22,7 @@ function Navbar() {
           onClick={() => router.push("/")}
         >
           <Image
+            loader={myLoader}
             src={me}
             placeholder="blur"
             alt="edwin narváez"

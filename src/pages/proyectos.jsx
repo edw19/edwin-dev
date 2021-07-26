@@ -3,6 +3,11 @@ import Head from "next/head";
 import Image from "next/image";
 import system from "/public/system of lessa.png";
 
+const myLoader = ({ src, width, quality }) => {
+  console.log(src);
+  return src;
+};
+
 function proyectos() {
   return (
     <>
@@ -18,11 +23,21 @@ function proyectos() {
             <h1 className="font-semibold text-2xl">{proyect.title}</h1>
             <p>{proyect.description}</p>
             <div className="flex justify-end">
-              <a href={proyect?.url} className=" px-4 py-2 bg-indigo-500 rounded-md text-white mb-2" target="_black">
+              <a
+                href={proyect?.url}
+                className=" px-4 py-2 bg-indigo-500 rounded-md text-white mb-2"
+                target="_black"
+              >
                 Revisar
               </a>
             </div>
-            <Image src={system} placeholder="blur"  alt="sistema de ventas ecuador"/>
+            <Image
+              loader={myLoader}
+              alt="edwin narváez"
+              src={system}
+              placeholder="blur"
+              alt="sistema de ventas ecuador"
+            />
           </div>
         ))}
       </div>
