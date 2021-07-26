@@ -1,14 +1,9 @@
 import Link from "next/link";
 import Search from "./Search";
-import Image from "next/image";
-import me from "/public/edwin.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-const myLoader = ({ src, width, quality }) => {
-  return src;
-};
 
 function Navbar() {
   const router = useRouter();
@@ -20,10 +15,8 @@ function Navbar() {
           className="flex justify-center my-1 pl-3 md:col-start-2 lg:col-start-3"
           onClick={() => router.push("/")}
         >
-          <Image
-            loader={myLoader}
-            src={me}
-            placeholder="blur"
+          <img
+            src="/edwin.png"
             alt="edwin narváez"
             width={50}
             height={50}
