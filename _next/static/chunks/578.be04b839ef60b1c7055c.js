@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[578],{578:function(e,n,c){"use strict";c.r(n);var r=c(5893);n.default=function(e){var n=e.children;return(0,r.jsx)("p",{className:"px-4 py-2",children:n})}}}]);

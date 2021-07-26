@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[521],{3521:function(e,n,r){"use strict";r.r(n);var t=r(5893);n.default=function(e){var n=e.children;return(0,t.jsx)("div",{className:"w-full py-2 text-center bg-gray-900 text-white rounded-md",children:(0,t.jsx)("code",{children:n})})}}}]);

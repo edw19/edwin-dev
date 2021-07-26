@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[588],{6588:function(e,t,s){"use strict";s.r(t);var n=s(5893);t.default=function(e){var t=e.title;return e.size,(0,n.jsx)("h1",{className:"text-2xl font-semibold",children:t})}}}]);
