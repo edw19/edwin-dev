@@ -19,7 +19,7 @@ function proyectos() {
             <p>{proyect.description}</p>
             <div className="flex justify-end">
               <a
-                href={prefix + proyect?.url}
+                href={proyect?.url}
                 className=" px-4 py-2 bg-indigo-500 rounded-md text-white mb-2"
                 target="_black"
               >
@@ -27,7 +27,7 @@ function proyectos() {
               </a>
             </div>
             <img
-              src="/lessa.png"
+              src={prefix + "/lessa.png"}
               alt="edwin narváez sistema de ventas ecuador"
               placeholder="blur"
             />
