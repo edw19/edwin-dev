@@ -4,7 +4,6 @@ import Image from "next/image";
 import system from "/public/system of lessa.png";
 
 const myLoader = ({ src, width, quality }) => {
-  console.log(src);
   return src;
 };
 
@@ -33,10 +32,9 @@ function proyectos() {
             </div>
             <Image
               loader={myLoader}
-              alt="edwin narváez"
+              alt="edwin narváez sistema de ventas ecuador"
               src={system}
               placeholder="blur"
-              alt="sistema de ventas ecuador"
             />
           </div>
         ))}

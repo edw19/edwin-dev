@@ -7,7 +7,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 const myLoader = ({ src, width, quality }) => {
-  // console.log(src)
   return src;
 };
 
