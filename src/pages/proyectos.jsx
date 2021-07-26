@@ -1,6 +1,7 @@
 import { proyects } from "../conts/proyects";
 import Head from "next/head";
 
+const prefix = "/edwin-dev";
 
 function proyectos() {
   return (
@@ -18,7 +19,7 @@ function proyectos() {
             <p>{proyect.description}</p>
             <div className="flex justify-end">
               <a
-                href={proyect?.url}
+                href={prefix + proyect?.url}
                 className=" px-4 py-2 bg-indigo-500 rounded-md text-white mb-2"
                 target="_black"
               >
