@@ -10,7 +10,7 @@ function Navbar() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 z-50 mt-3 navbar-backdrop rounded-b-md border-b border-indigo-200 ">
+    <nav className="sticky top-0 z-50 mt-3 navbar-backdrop rounded-b-md border-b ">
       <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12">
         <div
           className="flex justify-center my-1 pl-3 md:col-start-2 lg:col-start-3"
@@ -19,14 +19,14 @@ function Navbar() {
           <Image
             src={me}
             placeholder="blur"
-            // layout="responsive"
+            alt="edwin narváez"
             width={50}
             height={50}
             className="rounded-full"
           />
         </div>
         <Search />
-        <div className="hidden sm:block sm:col-span-4 md:col-span-5 lg:col-span-4 lg:bg-indigo-100 my-2 mx-2">
+        <div className="hidden sm:block sm:col-span-4 md:col-span-5 lg:col-span-4 my-2 mx-2">
           <div className="flex justify-center gap-x-4  mt-2 text-center">
             <Link href="/proyectos">
               <a className=" hover:text-indigo-400">Proyectos</a>

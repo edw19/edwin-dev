@@ -6,6 +6,7 @@ function Footer() {
           <a
             href="https://twitter.com/edwptr"
             target="_blank"
+            rel="noreferrer"
             className="flex flex-row"
           >
             <svg
@@ -22,6 +23,7 @@ function Footer() {
           <a
             href="https://github.com/edw19"
             target="_blank"
+            rel="noreferrer"
             className="flex flex-row"
           >
             <svg
@@ -39,6 +41,7 @@ function Footer() {
             href="https://www.facebook.com/edwPatricio/"
             className="flex flex-row"
             target="_blank"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

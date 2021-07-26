@@ -3,7 +3,9 @@ import { skills } from "../conts/skills";
 import Head from "next/head";
 
 function Habilidades() {
-  const [filterSkills, setFilterSkills] = useState([...skills.filter(skill => skill.category === "front-end")]);
+  const [filterSkills, setFilterSkills] = useState([
+    ...skills.filter((skill) => skill.category === "front-end"),
+  ]);
   return (
     <>
       <Head>
@@ -13,7 +15,7 @@ function Habilidades() {
         <h1 className="text-4xl font-bold">Conocimientos en</h1>
         <div className="flex ml-6">
           <select
-          defaultValue="front-end"
+            defaultValue="front-end"
             className="m-auto bg-transparent border-none outline-none font-bold"
             onChange={(e) =>
               setFilterSkills(
@@ -42,6 +44,7 @@ function Habilidades() {
               href={skill.uri}
               key={skill.title}
               target="_blank"
+              rel="noreferrer"
               className="hover:bg-gray-400 hover:bg-opacity-25 cursor-pointer p-2 flex flex-col items-center"
             >
               <div className="">

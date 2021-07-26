@@ -22,7 +22,7 @@ function proyectos() {
                 Revisar
               </a>
             </div>
-            <Image src={system} placeholder="blur" />
+            <Image src={system} placeholder="blur"  alt="sistema de ventas ecuador"/>
           </div>
         ))}
       </div>
