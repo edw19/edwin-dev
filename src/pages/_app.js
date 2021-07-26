@@ -19,7 +19,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <link rel="shortcut icon" href={ prefixEdwinDevAssets +"/favicon.ico"} />
+        <link
+          rel="shortcut icon"
+          href={prefixEdwinDevAssets + "/favicon.ico"}
+        />
+        <title>Edwin Narváez</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
