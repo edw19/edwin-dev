@@ -12,13 +12,14 @@ function Acerca() {
       </h1>
       <div className="sm:col-start-3 sm:col-span-5 md:col-start-3 md:col-span-6 lg:col-start-4">
         <p className="mt-5">
-          ¡Hola! soy Edwin. Me gusto el mundo del desarrollo debido a que es un
-          mundo apacionante y nos da la capacidad de resolver problemas a través
-          de software de cálidad
+          ¡Hola! soy Edwin, desarrollar aplicaciones que nos faciliten el
+          trabajo ha sido uno de mis principales objetivos al aprender
+          programación, me enfoco en resolver problemas a través de software de
+          cálidad.
         </p>
         <p className="mt-5">
           Estudié en la UNIVERSIDAD POLITÉCNICA ESTATAL DEL CARCHI (UPEC) donde
-          terminé mis estudios y obtuve mi titulo como Ingeniero en Informática.
+          terminé mis estudios y obtuve mi título como Ingeniero en Informática.
         </p>
         <p>
           Actualmente estoy trabajando en Lessa una aplicación creada por mi y
