@@ -7,7 +7,7 @@ function Acerca() {
       <Head>
         <title>Edwin Narváez - Acerca de mi</title>
       </Head>
-      <h1 className="text-4xl text-center sm:col-span-8 md:col-span-10 font-bold mt-4">
+      <h1 className="text-4xl text-center sm:col-start-2 sm:col-span-6 md:col-start-2 md:col-span-8 lg:col-start-3 font-bold mt-4">
         Acerca de mi
       </h1>
       <div className="sm:col-start-3 sm:col-span-5 md:col-start-3 md:col-span-6 lg:col-start-4">

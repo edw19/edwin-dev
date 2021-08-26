@@ -32,11 +32,8 @@ function Navbar() {
             <Link href="/habilidades">
               <a className=" hover:text-indigo-400">Habilidades</a>
             </Link>
-            <Link href="/contacto">
-              <a className=" hover:text-indigo-400">Contacto</a>
-            </Link>
             <Link href="/acerca">
-              <a className=" hover:text-indigo-400">Acerca</a>
+                <a className=" hover:text-indigo-400">Acerca</a>
             </Link>
           </div>
         </div>

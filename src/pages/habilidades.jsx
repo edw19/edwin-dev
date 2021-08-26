@@ -20,9 +20,9 @@ function Habilidades() {
       <Head>
         <title>Edwin Narváez - Software Skills</title>
       </Head>
-      <div className="sm:col-span-8 md:col-span-10 flex flex-row justify-center text-center mt-4">
+      <div className="sm:col-start-2 sm:col-span-6 md:col-start-2 md:col-span-8 lg:col-start-3 flex flex-row justify-center text-center mt-4">
         <h1 className="text-4xl font-bold">Software Skills</h1>
-        <div className="flex ml-6">
+        <div className="flex">
           <select
             defaultValue="*"
             className="m-auto px-2 bg-transparent border-none outline-none font-bold"
