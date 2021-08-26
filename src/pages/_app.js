@@ -8,7 +8,7 @@ import Head from "next/head";
 import { prefixEdwinDevAssets } from "../constants";
 
 progress.configure({
-  showSpinner: true,
+  showSpinner: false,
 });
 
 Router.events.on("routeChangeStart", () => progress.start());
@@ -24,6 +24,9 @@ function MyApp({ Component, pageProps }) {
           href={prefixEdwinDevAssets + "/favicon.ico"}
         />
         <title>Edwin Narváez</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Edwin Patricio Narváez soy un desarrollador web" />
+        <meta name="keywords" content="edwin, dev, edwindev, frontend, desarrollador web" />
       </Head>
       <Component {...pageProps} />
     </Layout>

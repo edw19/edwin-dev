@@ -20,7 +20,7 @@ function Navbar() {
             alt="edwin narváez"
             width={50}
             height={50}
-            className="rounded-full"
+            className="rounded-full cursor-pointer"
           />
         </div>
         <Search />

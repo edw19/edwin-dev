@@ -1,8 +1,8 @@
 export const proyects = [
   {
-    title: "Sistema de ventas",
+    title: "Lessa",
     description:
-      "Esta aplicación ayuda a los locales comerciales a llevar un control de sus ventas, compras, inventario y demás actividades que se realizan diariamente",
+      "Es un sistema de ventas web que ayuda a los pequeños y medianos comerciantes a llevar un control diario sobre sus ventas, compras, inventario y clientes.",
     img: "http://img",
     url: "https://sales-three.vercel.app/",
   },

@@ -3,32 +3,33 @@ import { skills } from "../conts/skills";
 import Head from "next/head";
 
 function Habilidades() {
-  const [filterSkills, setFilterSkills] = useState([
-    ...skills.filter((skill) => skill.category === "front-end"),
-  ]);
+  const [filterSkills, setFilterSkills] = useState(skills);
+
+  const handleChangeSkill = (e) => {
+    setFilterSkills(
+      skills.filter((skill) =>
+        e.target.value === "*"
+          ? [...skills]
+          : skill.category === e.target.value
+      )
+    )
+  }
+
   return (
     <>
       <Head>
-        <title>Edwin Narváez - Habilidades</title>
+        <title>Edwin Narváez - Software Skills</title>
       </Head>
       <div className="sm:col-span-8 md:col-span-10 flex flex-row justify-center text-center mt-4">
-        <h1 className="text-4xl font-bold">Conocimientos en</h1>
+        <h1 className="text-4xl font-bold">Software Skills</h1>
         <div className="flex ml-6">
           <select
-            defaultValue="front-end"
-            className="m-auto bg-transparent border-none outline-none font-bold"
-            onChange={(e) =>
-              setFilterSkills(
-                skills.filter((skill) =>
-                  e.target.value === "*"
-                    ? [...skills]
-                    : skill.category === e.target.value
-                )
-              )
-            }
+            defaultValue="*"
+            className="m-auto px-2 bg-transparent border-none outline-none font-bold"
+            onChange={handleChangeSkill}
           >
             <option className="text-right font-extrabold" value="*">
-              *
+              Todas las areas
             </option>
             <option value="front-end">Front-End</option>
             <option value="back-end">Back-End</option>

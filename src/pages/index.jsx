@@ -37,15 +37,17 @@ export default function Home({ posts }) {
       </div>
       <div className="hidden sm:block sm:col-span-3 bg-yellow-100 md:col-span-3 text-center bg-gray-100 py-4">
         <h1 className="mb-4 font-bold">Últimas Publicaciones</h1>
-        {posts.map((post) => (
-          <Link
-          key={post.filePath}
-            as={`/posts/${post.filePath.replace(/\.mdx?$/, "")}`}
-            href={`/posts/[slug]`}
-          >
-            <a className="hover:text-blue-100 ">{post.data.title}</a>
-          </Link>
-        ))}
+        <div className="flex flex-col">
+          {posts.map((post) => (
+            <Link
+              key={post.filePath}
+              as={`/posts/${post.filePath.replace(/\.mdx?$/, "")}`}
+              href={`/posts/[slug]`}
+            >
+              <a className="hover:text-blue-100 hover:font-medium ">{post.data.title}</a>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );
